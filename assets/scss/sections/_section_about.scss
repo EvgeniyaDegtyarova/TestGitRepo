@@ -1,0 +1,47 @@
+.about {
+    background-color: $color-gray-light;
+    letter-spacing: 0.055em;
+    &__container {
+        display: grid;
+        max-width: $ul;
+        margin: auto;
+        padding-right: $gap;
+        padding-left: $gap;
+        grid-template-areas: "rt lt";
+        grid-template-columns: 1fr 271px;
+    }
+    &__content {
+        display: grid;
+        grid-area: rt;
+        overflow: hidden;
+    }
+    &__image {
+        display: grid;
+        grid-area: lt;
+        align-content: center;
+        justify-items: center;
+    }
+}
+
+h2 {
+    letter-spacing: 0.1em;
+    font-family: $font-header;
+    line-height: 1.2em;
+    color: $color-primary;
+    font-size: 2.5rem;
+}
+
+.about__content p:first-of-type {
+    position: relative;
+    margin-top: -5px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.125rem;
+    color: $color-gray;
+}

@@ -1,12 +1,15 @@
         .header-content {
             position: relative;
             &__container {
-                @extend %container;
+                max-width: $ul;
+                margin: auto;
+                padding-left: $gap;
+                padding-right: $gap;
             }
             &__title {
                 text-align: center;
                 @media(min-width: $lg +1) {
-                    margin: 0 0 53px
+                    margin: 0 0 53px;
                 }
                 @media(max-width:$lg) {
                     margin: 0 0 43px;
