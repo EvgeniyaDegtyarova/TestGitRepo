@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 12px;
     font-family: $font-main;
     letter-spacing: 0.1em;
     overflow-y: scroll;
@@ -32,6 +32,7 @@ h1 {
 }
 
 .btn {
+    display: block;
     background-color: rgba($color-light, 0.1);
     border: 2px solid $color-light;
     @media(min-width: $lg +1) {
@@ -56,6 +57,7 @@ h1 {
 }
 
 .btn-accent {
+    display: block;
     background-color: rgba($color-primary, 0.8);
     border: 2px solid $color-primary;
     min-width: 350px;
