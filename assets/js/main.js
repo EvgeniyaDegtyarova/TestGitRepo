@@ -1,1 +1,5 @@
-console.log('2322Test');
+$(document).ready(() => {
+    $('.header-navbar__hamburger').on('click', function() {
+        $(this).toggleClass('active');
+    });
+});

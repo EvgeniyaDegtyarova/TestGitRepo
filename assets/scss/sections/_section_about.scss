@@ -9,6 +9,22 @@
         padding-left: $gap;
         grid-template-areas: "rt lt";
         grid-template-columns: 1fr 271px;
+        @media (max-width: $lg) {
+            grid-gap: $gap*5;
+            grid-template-columns: 1fr 271px;
+        }
+        @media (max-width:$lg) and (min-width:$md) {
+            grid-gap: $gap*2;
+            grid-template-columns: 1fr 271px;
+        }
+        @media (max-width:$md -1) and (min-width:$sm) {
+            grid-gap: $gap;
+            grid-template-columns: 1fr 236px;
+        }
+        @media (max-width:$sm - 1) {
+            grid-gap: $gap;
+            grid-template-columns: 1fr;
+        }
     }
     &__content {
         display: grid;

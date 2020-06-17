@@ -3,16 +3,21 @@
 }
 
 html {
-    font-size: 12px;
+    font-size: 16 px;
     font-family: $font-main;
     letter-spacing: 0.1em;
     overflow-y: scroll;
     color: $color-gray;
 }
 
+section {
+    display: block;
+}
+
 a {
     text-decoration: none;
     color: $color-light;
+    background-color: transparent;
 }
 
 h1 {
@@ -62,6 +67,8 @@ p {
     display: block;
     background-color: rgba($color-light, 0.1);
     border: 2px solid $color-light;
+    text-align: center;
+    letter-spacing: 0.1em;
     @media(min-width: $lg +1) {
         min-width: 250px;
         font-size: 1.125rem;
@@ -84,10 +91,10 @@ p {
 }
 
 .btn-accent {
-    display: block;
+    padding: 18px 20px;
     background-color: rgba($color-primary, 0.8);
     border: 2px solid $color-primary;
-    min-width: 350px;
+    width: 350px;
     @extend %btn-common;
 }
 
@@ -99,4 +106,19 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+}
+
+li {
+    display: list-item;
+    text-align: parent;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
 }

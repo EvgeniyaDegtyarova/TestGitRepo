@@ -1,7 +1,9 @@
      .header-navbar {
+         position: relative;
          display: grid;
          align-items: center;
          justify-items: end;
+         letter-spacing: 0.1em;
          &__hamburger {
              width: 30px;
              height: 22.5px;
@@ -60,12 +62,14 @@
          &_list {
              list-style: none;
              padding: 0;
-             margin: 0 -$gap 0 0;
+             margin: 0;
+             width: 100%;
+             justify-content: end;
              @media (min-width: $md + 1) {
                  display: grid;
                  grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
                  width: 100%;
-                 justify-content: end;
+                 justify-content: flex-end;
              }
              @media(max-width: $md) {
                  display: none;
@@ -80,4 +84,29 @@
                  color: $color-accent;
              }
          }
+     }
+     
+     ul {
+         list-style-type: disc;
+     }
+     
+     .header-navbar__btn-row:nth-of-type(1) {
+         top: 0;
+     }
+     
+     .header-navbar__btn-row:nth-of-type(2) {
+         top: 9px;
+     }
+     
+     .header-navbar__btn-row:nth-of-type(3) {
+         top: 18px;
+     }
+     
+     .header-navbar__list {
+         list-style: none;
+         display: inline-block;
+     }
+     
+     li {
+         display: inline-block
      }
