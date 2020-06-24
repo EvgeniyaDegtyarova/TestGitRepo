@@ -91,3 +91,21 @@
     height: 100%;
     grid-template-rows: 300px 1fr;
 }
+
+.post-item:hover {
+    background-color: #d8d8d8;
+}
+
+.post-item:hover .post-item__image img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.post-item:hover h3 {
+    color: #2d3651;
+}
+
+.post-item:hover p {
+    color: #2d3651;
+}

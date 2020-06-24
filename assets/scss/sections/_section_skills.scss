@@ -39,6 +39,7 @@
     background-color: $color-primary;
     position: relative;
     overflow: hidden;
+    padding: $gap;
     &__overlay {
         background-color: $color-primary;
         z-index: 1;
@@ -53,6 +54,7 @@
         @include abs-position;
     }
     &__title {
+        font-size: 1.25rem;
         z-index: 1;
         margin: 0;
         @include abs-position;

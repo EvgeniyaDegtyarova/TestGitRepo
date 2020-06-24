@@ -1,6 +1,8 @@
         .header-content {
             position: relative;
             &__container {
+                display: grid;
+                max-height: 185px;
                 max-width: $ul;
                 margin: auto;
                 padding-left: $gap;
@@ -9,7 +11,7 @@
             &__title {
                 text-align: center;
                 @media(min-width: $lg +1) {
-                    margin: 0 0 53px;
+                    margin: 0 0 53px 0;
                 }
                 @media(max-width:$lg) {
                     margin: 0 0 43px;
@@ -19,6 +21,7 @@
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
+                margin-bottom: 0;
                 @media (min-width: $lg) {
                     min-width: 250px;
                 }
