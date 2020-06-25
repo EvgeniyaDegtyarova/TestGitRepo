@@ -1,114 +1,112 @@
-        .about {
-            background-color: $color-gray-light;
-            letter-spacing: 0.055em;
-            height: 699px;
-            @media (min-width: $lg) {
-                padding-top: $gap*5;
-                padding-bottom: $gap*5;
-            }
-            @media (max-width: $lg - 1) and (min-width: $md) {
-                padding-top: $gap*4;
-                padding-bottom: $gap*4;
-            }
-            @media (max-width: $md - 1) {
-                padding-top: $gap*3;
-                padding-bottom: $gap*3;
-            }
-            &__container {
-                display: grid;
-                margin: auto;
-                max-width: $ul;
-                padding-right: $gap;
-                padding-left: $gap;
-                height: 499px;
-                @media (min-width: $lg) {
-                    grid-gap: $gap*5;
-                    grid-template-columns: 1fr 271px;
-                }
-                @media (max-width:$lg - 1) and (min-width:$md) {
-                    grid-gap: $gap*2;
-                    grid-template-columns: 1fr 271px;
-                }
-                @media (max-width:$md - 1) and (min-width:$sm) {
-                    grid-gap: $gap;
-                    grid-template-columns: 1fr 236px;
-                }
-                @media (max-width:$sm - 1) {
-                    grid-gap: $gap;
-                    grid-template-columns: 1fr;
-                }
-            }
-            &__content {
-                display: grid;
-                overflow: hidden;
-                height: 499px;
-            }
-            &__image {
-                margin-top: $gap*5;
-                display: grid;
-                align-content: center;
-                justify-items: center;
-            }
-        }
-        
-        @media (min-width: $lg) {
-            .about__content p {
-                font-size: 1.125rem;
-            }
-            .about__content p:first-of-type::after {
-                right: -50px;
-            }
-            h2 {
-                margin-bottom: 56px;
-                font-size: 2.5rem;
-            }
-        }
-        
-        @media (max-width: $lg - 1) and (min-width: $md) {
-            .about__content p:first-of-type::after {
-                right: -$gap;
-            }
-            h2 {
-                margin-bottom: 42px;
-                font-size: 2rem;
-            }
-        }
-        
-        @media (max-width: $md - 1) and (min-width: $sm) {
-            .about__content p:first-of-type::after {
-                right: -10px;
-            }
-            h2 {
-                margin-bottom: 36px;
-                font-size: 1.5rem;
-            }
-        }
-        
-        @media (max-width: $sm - 1) {
-            .about__content p:first-of-type::after {
-                display: none
-            }
-            h2 {
-                margin-bottom: 36px;
-                text-align: center;
-                font-size: 1.5rem;
-            }
-        }
-        
-        .about__content p:first-of-type {
-            position: relative;
-            margin-top: -5px;
-        }
-        
-        .about__content p:first-of-type::after {
-            position: absolute;
-            top: 0;
-            width: 2px;
-            height: 200px;
-            content: "";
-            background-color: rgba(99, 117, 136, 0.1);
-        }
-        
-        .about__content p:last-of-type {
-            margin: 0;
-        }
+                            .about {
+                                background-color: $color-gray-light;
+                                letter-spacing: 0.055em;
+                                height: 699px;
+                                @media (min-width: $lg) {
+                                    padding-top: $gap*5;
+                                    padding-bottom: $gap*5;
+                                }
+                                @media (max-width: $lg - 1) and (min-width: $md) {
+                                    padding-top: $gap*4;
+                                    padding-bottom: $gap*4;
+                                }
+                                @media (max-width: $md - 1) {
+                                    padding-top: $gap*3;
+                                    padding-bottom: $gap*3;
+                                }
+                                &__container {
+                                    display: grid;
+                                    margin: auto;
+                                    max-width: $ul;
+                                    padding-right: $gap;
+                                    padding-left: $gap;
+                                    height: 499px;
+                                    @media (min-width: $lg) {
+                                        grid-gap: $gap*5;
+                                        grid-template-columns: 1fr 271px;
+                                    }
+                                    @media (max-width:$lg - 1) and (min-width:$md) {
+                                        grid-gap: $gap*2;
+                                        grid-template-columns: 1fr 271px;
+                                    }
+                                    @media (max-width:$md - 1) and (min-width:$sm) {
+                                        grid-gap: $gap;
+                                        grid-template-columns: 1fr 236px;
+                                    }
+                                    @media (max-width:$sm - 1) {
+                                        grid-gap: $gap;
+                                        grid-template-columns: 1fr;
+                                    }
+                                }
+                                &__content {
+                                    display: block;
+                                    overflow: hidden;
+                                    height: 499px;
+                                }
+                                &__image {
+                                    display: grid;
+                                    align-content: center;
+                                    justify-items: center;
+                                }
+                            }
+                            
+                            .about__content p:first-of-type {
+                                position: relative;
+                                margin-top: -5px;
+                            }
+                            
+                            .about__content p:first-of-type::after {
+                                position: absolute;
+                                top: 0;
+                                width: 2px;
+                                height: 200px;
+                                right: -10px;
+                                content: "";
+                                background-color: rgba(99, 117, 136, 0.1);
+                                border: solid 2px;
+                                border-bottom: 2px solid;
+                            }
+                            
+                            @media (min-width: $lg) {
+                                .about__content p {
+                                    font-size: 1.125rem;
+                                }
+                                .about__content p:first-of-type::after {
+                                    right: -50px;
+                                }
+                                h2 {
+                                    margin-bottom: 56px;
+                                    font-size: 2.5rem;
+                                }
+                            }
+                            
+                            @media (max-width: $lg - 1) and (min-width: $md) {
+                                .about__content p:first-of-type::after {
+                                    right: -$gap;
+                                }
+                                h2 {
+                                    margin-bottom: 42px;
+                                    font-size: 2rem;
+                                }
+                            }
+                            
+                            @media (max-width: $md - 1) and (min-width: $sm) {
+                                .about__content p:first-of-type::after {
+                                    right: -10px;
+                                }
+                                h2 {
+                                    margin-bottom: 36px;
+                                    font-size: 1.5rem;
+                                }
+                            }
+                            
+                            @media (max-width: $sm - 1) {
+                                .about__content p:first-of-type::after {
+                                    display: none;
+                                }
+                                h2 {
+                                    margin-bottom: 36px;
+                                    text-align: center;
+                                    font-size: 1.5rem;
+                                }
+                            }

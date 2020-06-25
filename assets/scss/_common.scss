@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: 16 px;
+    font-size: 16px;
     font-family: $font-main;
     letter-spacing: 0.1em;
     overflow-y: scroll;
@@ -53,11 +53,6 @@ h3 {
 }
 
 p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-size: 1.125rem;
     color: $color-gray;
 }
@@ -100,26 +95,16 @@ p {
 
 h3 {
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
 }
 
 li {
     display: list-item;
-    text-align: parent;
 }
 
 ul {
     display: block;
     list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
 }
 
 button,
