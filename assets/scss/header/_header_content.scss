@@ -1,40 +1,47 @@
-        .header-content {
-            position: relative;
-            &__container {
-                display: grid;
-                max-height: 185px;
-                max-width: $ul;
-                margin: auto;
-                padding-left: $gap;
-                padding-right: $gap;
-            }
-            &__title {
-                text-align: center;
-                @media(min-width: $lg +1) {
-                    margin: 0 0 53px 0;
-                }
-                @media(max-width:$lg) {
-                    margin: 0 0 43px;
-                }
-            }
-            &__buttons {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                margin-bottom: 0;
-                @media (min-width: $lg) {
-                    min-width: 250px;
-                }
-                @media (min-width: $sm + 1) {
-                    .btn:first-of-type {
-                        margin-right: $gap;
-                    }
-                    @media(min-width:$sm) {
-                        align-items: center;
-                    }
-                }
-                @media(min-width:$sm) {
-                    margin-bottom: $gap;
-                }
-            }
-        }
+                                    .header-content {
+                                        position: relative;
+                                        &__container {
+                                            display: grid;
+                                            max-height: 185px;
+                                            max-width: $ul;
+                                            margin: auto;
+                                            padding-left: $gap;
+                                            padding-right: $gap;
+                                        }
+                                        &__title {
+                                            text-align: center;
+                                            @media(min-width: $lg) {
+                                                margin: 0 0 53px 0;
+                                            }
+                                            @media(min-width:$lg - 1) {
+                                                margin: 0 0 43px;
+                                            }
+                                        }
+                                        &__buttons {
+                                            display: flex;
+                                            justify-content: center;
+                                            flex-wrap: wrap;
+                                            margin-bottom: 0;
+                                        }
+                                        @media (min-width: $lg) {
+                                            min-width: 250px;
+                                        }
+                                        @media(max-width: $sm) {
+                                            align-items: center;
+                                        }
+                                        @media(max-width:$sm) {
+                                            margin-bottom: $gap;
+                                        }
+                                    }
+                                    
+                                    @media (min-width: $md - 1) {
+                                        .header-content__buttons .btn:not(:last-of-type) {
+                                            margin-right: 20px;
+                                        }
+                                    }
+                                    
+                                    @media (max-width: $sm - 1) {
+                                        .btn:first-of-type {
+                                            margin-right: $gap;
+                                        }
+                                    }

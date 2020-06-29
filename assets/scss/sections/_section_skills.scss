@@ -17,7 +17,7 @@
             grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
             grid-template-columns: repeat(3, 1fr);
         }
-        @media (max-width : $md - 1) and (min-width: $sm) {
+        @media (max-width: $md - 1) and (min-width: $sm) {
             grid-gap: 10px;
             grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
             grid-template-columns: 1fr 1fr;
@@ -31,6 +31,9 @@
     &__button {
         display: flex;
         justify-content: center;
+        @media (max-width: $sm - 1) {
+            width: 100%;
+        }
     }
 }
 

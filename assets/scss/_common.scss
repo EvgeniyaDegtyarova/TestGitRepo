@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+main {
+    display: block;
+}
+
 html {
     font-size: 16px;
     font-family: $font-main;
@@ -26,13 +30,13 @@ h1 {
     font-weight: 300;
     letter-spacing: 0.08em;
     line-height: 1.2em;
-    @media(min-width: $lg +1) {
+    @media(min-width: $lg) {
         font-size: 3.75rem;
     }
-    @media(max-width:$lg) and (min-width: $md + 1) {
+    @media(max-width:$lg - 1) and (min-width: $md) {
         font-size: 2.5rem;
     }
-    @media(max-width: $md) {
+    @media(max-width: $md -1) {
         font-size: 1.875rem;
     }
 }
@@ -64,6 +68,7 @@ p {
     border: 2px solid $color-light;
     text-align: center;
     letter-spacing: 0.1em;
+    font-size: 1.125rem;
     @media(min-width: $lg +1) {
         min-width: 250px;
         font-size: 1.125rem;
@@ -87,10 +92,14 @@ p {
 
 .btn-accent {
     padding: 18px 20px;
+    font-size: 1.125rem;
     background-color: rgba($color-primary, 0.8);
     border: 2px solid $color-primary;
     width: 350px;
     @extend %btn-common;
+    @media (max-width: $sm - 1) {
+        width: 100%;
+    }
 }
 
 h3 {

@@ -1,6 +1,7 @@
                             .about {
                                 background-color: $color-gray-light;
                                 letter-spacing: 0.055em;
+                                min-height: 699px;
                                 @media(max-width: $ul) and (min-width: $lg +1) {
                                     padding-top: $gap*5;
                                     padding-bottom: $gap*5;
@@ -40,7 +41,7 @@
                                     @media (max-width:$lg - 1) and (min-width:$md) {
                                         grid-gap: $gap*2;
                                         grid-template-columns: 1fr 271px;
-                                        /*min-height: 527px;*/
+                                        min-height: 527px;
                                     }
                                     @media (max-width:$md - 1) and (min-width:$sm) {
                                         grid-gap: $gap;
@@ -56,15 +57,6 @@
                                 &__content {
                                     display: block;
                                     overflow: hidden;
-                                    @media(max-width: $ul) and (min-width: $lg +1) {
-                                        min-height: 499px;
-                                    }
-                                    /*@media (min-width: $sm) {
-                                        min-height: 499px;
-                                    }
-                                    @media (max-width: $sm - 1) {
-                                        min-height: 539px;
-                                    }*/
                                 }
                                 &__image {
                                     display: grid;
@@ -81,36 +73,22 @@
                                 margin-top: -5px;
                             }
                             
-                            .about__content p:first-of-type::after {
+                            .about__content::after {
                                 content: " ";
                                 z-index: 10;
                                 position: absolute;
-                                top: 0;
                                 width: 2px;
+                                left: 970px;
                                 height: 200px;
-                                left: 927px;
-                                padding-right: 50px;
                                 background-color: rgba(99, 117, 136, 0.7);
                             }
                             
-                            @media (max-width:$ul) and (min-width:$lg) {
-                                .about__content p:first-of-type::after {
-                                    left: 950px;
-                                    overflow: hidden;
-                                    z-index: 10;
-                                    width: 2px;
-                                    height: 200px;
-                                    background-color: rgba(99, 117, 136, 0.7);
-                                }
-                            }
-                            
-                            ;
-                            @media (max-width: $lg -1) {
+                            @media (min-width: $lg) {
                                 .about__content p {
                                     font-size: 1.125rem;
                                 }
                                 .about__content p:first-of-type::after {
-                                    right: 50px;
+                                    right: 0px;
                                 }
                                 h2 {
                                     margin-bottom: 56px;
@@ -120,7 +98,7 @@
                             
                             @media (max-width: $lg - 1) and (min-width: $md) {
                                 .about__content p:first-of-type::after {
-                                    right: -50px;
+                                    right: -$gap;
                                 }
                                 h2 {
                                     margin-bottom: 42px;
@@ -130,10 +108,10 @@
                             
                             @media (max-width: $md - 1) and (min-width: $sm) {
                                 .about__content p:first-of-type::after {
-                                    right: -70px;
+                                    right: -10px;
                                 }
                                 h2 {
-                                    margin-bottom: 36px;
+                                    /**margin-bottom: 36px;*/
                                     font-size: 1.5rem;
                                 }
                             }
@@ -147,9 +125,4 @@
                                     text-align: center;
                                     font-size: 1.5rem;
                                 }
-                            }
-                            
-                            .about h2,
-                            .posts h2 {
-                                margin-top: 0;
                             }
