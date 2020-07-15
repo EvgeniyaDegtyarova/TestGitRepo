@@ -1,5 +1,4 @@
                                                 .header-content {
-                                                    //вот тут было закоментировано релейтив
                                                     position: relative;
                                                     &__container {
                                                         display: grid;
@@ -22,7 +21,6 @@
                                                         display: flex;
                                                         justify-content: center;
                                                         flex-wrap: wrap;
-                                                        /*дописываю  гитхаба*/
                                                         margin-bottom: 0;
                                                     }
                                                 }

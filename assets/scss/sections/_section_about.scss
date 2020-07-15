@@ -50,13 +50,14 @@
             overflow: hidden;
             padding-right: 10px;
             @media (max-width: $lg) {
-                max-width: 630px;
+                max-width: 639px;
             }
             @media (max-width: $md) {
-                max-width: 414px;
+                max-width: 674px;
             }
             @media (max-width: $sm) {
                 max-width: 532px;
+                overflow: hidden;
             }
             &-title {
                 margin-bottom: 40px;
