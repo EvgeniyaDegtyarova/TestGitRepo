@@ -5,6 +5,8 @@
             padding-top: $gap * 5;
             padding-bottom: $gap * 5;
             min-height: 699px;
+            padding-right: 0;
+            padding-left: 0;
         }
         @media (min-width: $lg) {
             padding-top: $gap * 5;
@@ -19,10 +21,14 @@
         @media (max-width: $md - 1) and (min-width: $sm) {
             padding-top: $gap * 3;
             padding-bottom: $gap * 3;
+            padding-right: 0;
+            padding-left: 0;
         }
         @media (max-width: $sm) {
             padding-top: 57px;
             max-height: 1159px;
+            padding-right: 0;
+            padding-left: 0;
         }
         &__container {
             display: flex;
@@ -57,7 +63,6 @@
             }
             @media (max-width: $sm) {
                 max-width: 532px;
-                overflow: hidden;
             }
             &-title {
                 margin-bottom: 40px;

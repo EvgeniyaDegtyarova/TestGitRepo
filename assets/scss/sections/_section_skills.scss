@@ -1,5 +1,11 @@
 .skills {
     padding: ($gap/2) ($gap/2) ($gap*2) ($gap/2);
+    @media (min-width: $sm) {
+        padding: 10px 10px 40px;
+    }
+    @media (max-width: $sm - 1) {
+        padding: 20px;
+    }
     &__container {
         display: grid;
         padding-bottom: $gap;
@@ -31,8 +37,10 @@
     &__button {
         display: flex;
         justify-content: center;
+        //height: 60px;
         @media (max-width: $sm - 1) {
             width: 100%;
+            // height: 60px;
         }
     }
 }
