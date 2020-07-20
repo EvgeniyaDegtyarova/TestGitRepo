@@ -64,9 +64,9 @@
             @media (max-width: $sm) {
                 max-width: 532px;
             }
-            &-title {
-                margin-bottom: 40px;
-            }
+            // &-title {
+            //     //margin-bottom: 40px;
+            // }
             &-text {
                 max-height: 320px;
                 @media (max-width: $lg) {
