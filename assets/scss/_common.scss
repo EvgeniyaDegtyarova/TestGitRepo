@@ -13,6 +13,9 @@
         color: $color-gray;
         line-height: 1.15;
     }
+    body {
+        overflow-x: hidden;
+    }
     
     section {
         display: block;
@@ -52,7 +55,6 @@
         @media (max-width: $lg - 1) and (min-width: $md) {
             margin-bottom: 42px;
             font-size: 2rem;
-            margin-block-start: 0;
         }
         @media (max-width: $sm - 1) {
             margin-bottom: 36px;
